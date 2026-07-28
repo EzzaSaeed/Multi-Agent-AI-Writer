@@ -37,7 +37,7 @@ Your responsibilities:
 """
 
     response = client.chat.completions.create(
-        model=MODEL,
+        model= "meta-llama/llama-3.3-70b-instruct",
         messages=[
             {"role":"system","content":system_prompt},
             {"role":"user","content":topic}
