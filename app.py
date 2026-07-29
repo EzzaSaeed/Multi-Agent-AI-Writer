@@ -19,7 +19,7 @@ client = OpenAI(
     base_url="https://openrouter.ai/api/v1"
 )
 
-MODEL = "openai/gpt-4.1-mini"
+MODEL = "google/gemini-2.5-flash"
 
 # -------------------------------
 # Agent 1
@@ -35,18 +35,18 @@ Your responsibilities:
 - Use headings if appropriate.
 - Do NOT critique yourself.
 """
-
+try:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role":"system","content":system_prompt},
-            {"role":"user","content":topic}
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": topic}
         ],
         temperature=0.8
     )
-
-    return response.choices[0].message.content
-
+except Exception as e:
+    st.error(e)
+    st.stop()
 
 # -------------------------------
 # Agent 2
