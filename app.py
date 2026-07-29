@@ -37,7 +37,7 @@ Your responsibilities:
 """
 
     response = client.chat.completions.create(
-        model=Model,
+        model=MODEL,
         messages=[
             {"role":"system","content":system_prompt},
             {"role":"user","content":topic}
