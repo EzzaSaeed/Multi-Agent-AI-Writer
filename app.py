@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 # Free model
-MODEL = "meta-llama/llama-3.1-8b-instruct:free"
+MODEL = "google/gemma-3-4b-it:free"
 
 
 # -------------------------------
