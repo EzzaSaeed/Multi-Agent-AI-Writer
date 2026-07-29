@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 # Free model
-MODEL = "nvidia/nemotron-nano-9b-v2:free"
+MODEL = "deepseek/deepseek-r1-0528-qwen3-8b:free"
 
 
 # -------------------------------
