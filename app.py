@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 # Free model
-MODEL = "nvidia/llama-nemotron-embed-vl-1b-v2:free",
+MODEL = "nvidia/nemotron-nano-9b-v2:free"
 
 
 # -------------------------------
