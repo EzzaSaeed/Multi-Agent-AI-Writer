@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 # Free model
-MODEL = "deepseek/deepseek-r1-0528-qwen3-8b:free"
+MODEL = "inclusionai/ling-3.0-flash:free"
 
 
 # -------------------------------
