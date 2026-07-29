@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 # Free model
-MODEL = "google/gemma-3-4b-it:free"
+MODEL = "qwen/qwen3-30b-a3b:free"
 
 
 # -------------------------------
